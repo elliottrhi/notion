@@ -11,6 +11,11 @@
 
 <h2>
   <script>
-    document.write(Date());
+    var today = new Date();
+    var year = today.getFullYear();
+    var mes = today.getMonth()+1;
+    var dia = today.getDate();
+    var fecha =dia+"-"+mes+"-"+year;
+    document.write(fecha());
   </script>
 </h2>
